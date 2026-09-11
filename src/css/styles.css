@@ -1,18 +1,44 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
 
-/* Sections style */
 @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+#datetime-picker {
+  width: 280px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+[data-start] {
+  margin-left: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
